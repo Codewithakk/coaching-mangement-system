@@ -1,0 +1,50 @@
+
+tables 
+
+
+courses
+SELECT TOP (1000) [id]
+      ,[name]
+      ,[fees]
+      ,[t_duration]
+  FROM [bca].[dbo].[Course]
+
+payfees
+SELECT TOP (1000) [p_id]
+      ,[s_name]
+      ,[t_toal]
+      ,[p_fees]
+      ,[r_fees]
+  FROM [bca].[dbo].[PayFees]
+
+teachers
+SELECT TOP (1000) [t_id]
+      ,[t_name]
+      ,[subject]
+      ,[qualif]
+  FROM [bca].[dbo].[Teacher]
+
+
+CREATE TABLE Student (
+
+       s_id int
+      ,name nchar(50)
+      ,s_name nchar(50)
+      ,addr nchar(50)
+      ,email nchar(50)
+      ,contact  int
+      ,college nchar(50)
+      ,s_date date
+      ,e_date date
+      ,fees int
+      ,t_name nchar(50)
+      ,year int
+);
+
+CREATE TABLE Student (
+
+       id int
+      ,name nchar(50)
+      ,fees int
+       ,t_duration int
+);
